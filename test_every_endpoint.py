@@ -47,7 +47,6 @@ def test_modifiy_entry(client):
                                     content_type = 'application/json')
     assert response_to_change.status_code == 200
 
-
 def test_delete_entry(client):
     '''Create entry that has an id of one, changing previous content id to 2'''
     post_response = post_json(client, 'http://127.0.0.1:8080/api/v1/entries', 
